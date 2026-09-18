@@ -1,6 +1,8 @@
 def add(a, b):
     return a + b
 
+print(add(4, 2))
+
 def sub(a, b):
     return a - b
 

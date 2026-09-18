@@ -5,3 +5,5 @@ print(mul(7, 9))
 
 def add(a, b):
     return a + b
+
+print add(4, 2)

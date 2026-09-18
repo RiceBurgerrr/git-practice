@@ -1,4 +1,7 @@
 def add(a, b):
     return a + b
 
-print(add(6, 4))
+def sub(a, b):
+    return a - b
+
+print(sub(6, 4))

@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SCHOOL_NO: ${{ vars.SCHOOL_NO }}
-      PW: ${{ vars.PW }}
+      PW: ${{ secrets.PW }}
     steps:
       - run: |
           echo "$SCHOOL_NO"

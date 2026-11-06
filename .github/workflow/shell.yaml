@@ -1,0 +1,11 @@
+name: Shell Command
+on: workflow_dispatch
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Check environment
+      run: |
+        echo "Current directory:"
+        pwd
+        echo "File list:"
+        ls -la

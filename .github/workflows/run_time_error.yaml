@@ -12,7 +12,7 @@ jobs:
         run: echo "Step 1 completed"
 
       - name: Step 2 - Failure
-        run: python -c "print(10 / 0)"
+        run: python -c "print(10 / 1)"
 
       - name: Step 3 - Will not run
         run: echo "Step 3 completed"

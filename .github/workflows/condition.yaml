@@ -15,4 +15,4 @@ jobs:
       # run을 먼저 작성
       - name: Print Goodbye
         run: echo "Goodbye"
-        if: ${{ contains(github.run_id, '1') }}
+        if: ${{ !contains(github.run_id, '1') }}

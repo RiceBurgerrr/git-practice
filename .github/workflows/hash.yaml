@@ -17,6 +17,7 @@ jobs:
           RESULT_MISSING: "${{ hashFiles('missing.txt') }}"
         run: printenv | grep '^RESULT_' | sort
 
+      - uses: actions/checkout@v5
       - name: GitHub File Hash
         env:
           RESULT_YAML: "${{ hashFiles('.github/workflows/*.yaml') }}"

@@ -9,7 +9,7 @@ jobs:
         run: |
           echo "Hello GitHub Actions" > sample.txt
 
-      - uses: actions/checkout@v5
+      # - uses: actions/checkout@v5 - 이렇게 쓰면 러너 초기화됨. 
 
       # 2. 해시 생성
       - name: Hash Test
@@ -19,6 +19,7 @@ jobs:
           RESULT_MISSING: "${{ hashFiles('missing.txt') }}"
         run: printenv | grep '^RESULT_' | sort
 
+      - uses: actions/checkout@v5
       - name: GitHub File Hash
         env:
           RESULT_YAML: "${{ hashFiles('.github/workflows/*.yaml') }}"
